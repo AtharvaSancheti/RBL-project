@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Check</title>
+    <style>
+        .container {
+            border: 2px solid #000;
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Person is: {{result}}</span></h1>
+        <img src="{{ url_for('static', filename='images/doctor_glucosmeter.jpg')}}" alt="Diabetic Image">
+    </div>
+</body>
+</html>
